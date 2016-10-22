@@ -5,9 +5,10 @@
  */
 'use strict';
 
-var projectName = 'angualr-qiniu';
+var projectName = 'angular-qiniu';
 
 var del = require('del');
+var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -20,7 +21,6 @@ var paths = {
 
 gulp.task('watch', ['build'], function() {
     gulp.watch(paths.src, ['build:js']);
-    gulp.watch(paths.html, ['build:html', 'build:htmlcache']);
 });
 
 gulp.task('lint', function() {
@@ -32,10 +32,10 @@ gulp.task('lint', function() {
 // js task
 gulp.task('build:js', ['lint'], function() {
     return gulp.src(paths.src)
-        .pipe(gulp.dest(paths.dist + '/js/'))
+        .pipe(gulp.dest(paths.dist + '/'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(paths.dist + '/js/'));
+        .pipe(gulp.dest(paths.dist + '/'));
 });
 
 gulp.task('build', [
