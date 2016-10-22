@@ -1,0 +1,25 @@
+{
+  "name": "angular-qiniu",
+  "description": "Qiniu uploader of angular version.",
+  "main": "index.js",
+  "authors": [
+    "Moon"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Qiniu",
+    "CDN",
+    "Angular"
+  ],
+  "homepage": "https://github.com/mooncool/angular-qiniu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8"
+  }
+}

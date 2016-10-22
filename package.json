@@ -1,0 +1,24 @@
+{
+  "name": "angular-qiniu",
+  "version": "1.0.0",
+  "description": "Qiniu uploader of angular version.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooncool/angular-qiniu.git"
+  },
+  "keywords": [
+    "Qiniu",
+    "CDN",
+    "Angular"
+  ],
+  "author": "Moon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mooncool/angular-qiniu/issues"
+  },
+  "homepage": "https://github.com/mooncool/angular-qiniu#readme"
+}
