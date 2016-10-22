@@ -4,7 +4,7 @@
  * @author Moon
  */
 angular
-    .module('demo', [])
+    .module('demo', ['mQiniu'])
     .controller('MainCtrl', MainCtrl);
 
 function MainCtrl() {
